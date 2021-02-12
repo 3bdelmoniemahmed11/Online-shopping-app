@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlineshopping">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlineShopping">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCnWAScIN3H_VIoG3YAnjBWbdGMuMTPuY0"/>
+        <activity android:name=".ItemSold"></activity>
+        <activity android:name=".myCartActivity" />
+        <activity android:name=".UploadCatActivity" />
+        <activity android:name=".UploadProductActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".MainViewActivity" />
+        <activity android:name=".SignUpnActivity" />
+        <activity android:name=".RecoveryPasswordActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+    </application>
+
+</manifest>

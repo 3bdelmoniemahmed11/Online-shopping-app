@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_search"
+        android:layout_marginRight="0dp"
+        android:icon="@drawable/icon_search"
+        android:title="Search....."
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/Voice_Search"
+        android:icon="@drawable/voice_24"
+        android:title="SearchByVoice"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/BarCode"
+        android:icon="@drawable/white_camera_24"
+        android:title="SearchByVoice"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_drawer_cart"
+        android:orderInCategory="200"
+        android:title="Cart"
+        android:icon="@drawable/cart"
+        app:showAsAction="always"/>
+
+    </menu>
